@@ -1,0 +1,17 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: aliceblue;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+    text-decoration: none;
+}
+
+li {
+    text-decoration: none;
+    display: inline-block;
+    margin: 1rem;
+    cursor: pointer;
+}
