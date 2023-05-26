@@ -5,18 +5,18 @@ import { NavLink, Link } from "react-router-dom"
 const NavBar = () => {
   return (
     <header>
-      <Link to={"/"}>
+      <Link to={"/"} style={{ textDecoration: 'none', color: 'white' }}>
         <h1> Apple Connection</h1>
       </Link>
 
       <nav>
         <ul>
           <li>
-            <NavLink to={`/categoria/2`}> MacBook </NavLink>
+            <NavLink to={`/categoria/2`} style={{ textDecoration: 'none', color: 'white' }}> MacBook </NavLink>
           </li>
 
           <li>
-            <NavLink to={`/categoria/3`}> Iphone </NavLink>
+            <NavLink to={`/categoria/3`} style={{ textDecoration: 'none', color: 'white' }}> Iphone </NavLink>
           </li>
 
         </ul>
