@@ -18,7 +18,7 @@ const NavBar = () => {
           <li>
             <NavLink to={`/categoria/3`} style={{ textDecoration: 'none', color: 'white' }}> Iphone </NavLink>
           </li>
-
+          
         </ul>
       </nav>
 

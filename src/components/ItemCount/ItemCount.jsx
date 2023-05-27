@@ -1,29 +1,32 @@
 import React from 'react'
 import { useState } from 'react'
 
-const ItemCount = () => {
-    const [contador, setContador] = useState(1);
-
-    let maximoStock = 10;
+const ItemCount = ({ inicial, stock, funcionAgregar }) => {
+    const [contador, setContador] = useState(inicial);
 
     const incrementar = () => {
-        if (contador < maximoStock) {
+        if (contador < stock) {
             setContador(contador + 1);
         }
     }
 
     const decrementar = () => {
-        if (contador > 1) {
+        if (contador > inicial) {
             setContador(contador - 1);
         }
     }
 
     return (
-        <div>
-            <button onClick={decrementar}> - </button>
-            <p> {contador} </p>
-            <button onClick={incrementar}> + </button>
-        </div>
+        <>
+            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                <button style={{ backgroundColor: 'transparent', color: '#ffffff', padding: '10px 20px', border: 'none', cursor: 'pointer', margin: '5px' }} onClick={decrementar}> - </button>
+                <p style={{ fontSize: '24px', margin: '0 10px', color: '#ffffff', }}>{contador}</p>
+                <button style={{ backgroundColor: 'transparent', color: '#ffffff', padding: '10px 20px', border:'none', borderRadius: '20%', cursor: 'pointer', margin: '5px' }} onClick={incrementar}> + </button>
+            </div>
+
+
+            <button style={{ fontSize: '20px', backgroundColor: 'transparent', color: '#ffffff', padding: '10px 20px', border: 'none', borderRadius: '10%', cursor: 'pointer', margin: '5px' }} onClick={() => funcionAgregar(contador)}>Agregar al Carrito</button>
+        </>
     )
 }
 

@@ -3,20 +3,14 @@ import ItemList from '../ItemList/ItemList'
 import { getProductos, getProductosPorCategoria } from '../../asyncmock'
 import { useParams } from 'react-router-dom'
 
-const ItemListConteiner = (props) => {
-  return (
-      <h2>{props.greeting}</h2>
-  )
-}
+function ItemListContainer({ greeting }) {
+  const [productos, setProductos] = useState([])
 
-const ItemListContainer = ({ greeting }) => {
-  const [productos, setProductos] = useState([]);
-
-  const { idCategoria } = useParams();
+  const { idCategoria } = useParams()
 
   useEffect(() => {
 
-    const funcionProductos = idCategoria ? getProductosPorCategoria : getProductos;
+    const funcionProductos = idCategoria ? getProductosPorCategoria : getProductos
 
     funcionProductos(idCategoria)
       .then(res => setProductos(res))

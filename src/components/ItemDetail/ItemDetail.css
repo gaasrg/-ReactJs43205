@@ -1,9 +1,11 @@
 .contenedorItem {
     text-align: center;
-    border: 1px solid #ffffff;
+    color: aliceblue;
     margin: 3rem;
+    flex-direction: column;
 }
 
-img {
+.img {
     width: 50vw;
 }
+
