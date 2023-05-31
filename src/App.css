@@ -3,9 +3,16 @@
   color:aliceblue
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Hello {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Hellof {
+  height: 50px;
+  filter: brightness(100) sepia(0) saturate(100);
+  
 }
 
 @media (prefers-reduced-motion: no-preference) {

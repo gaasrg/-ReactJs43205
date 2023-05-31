@@ -1,0 +1,17 @@
+.botone {
+    display: inline-block;
+    margin: 3px;
+    font-size: inherit;
+    line-height: 1.42;
+    padding: 0.05em 0.8em;
+    font-weight: normal;
+    border-width: 1px;
+    border-style: none;
+    color: gray;
+    border-radius: 0.2em;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: bottom;
+    width: 100px;
+    height: 25px;
+}

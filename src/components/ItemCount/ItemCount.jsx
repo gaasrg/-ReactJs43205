@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import './ItemCount.css'
 
 const ItemCount = ({ inicial, stock, funcionAgregar }) => {
     const [contador, setContador] = useState(inicial);
@@ -24,8 +25,7 @@ const ItemCount = ({ inicial, stock, funcionAgregar }) => {
                 <button style={{ backgroundColor: 'transparent', color: '#ffffff', padding: '10px 20px', border:'none', borderRadius: '20%', cursor: 'pointer', margin: '5px' }} onClick={incrementar}> + </button>
             </div>
 
-
-            <button style={{ fontSize: '20px', backgroundColor: 'transparent', color: '#ffffff', padding: '10px 20px', border: 'none', borderRadius: '10%', cursor: 'pointer', margin: '5px' }} onClick={() => funcionAgregar(contador)}>Agregar al Carrito</button>
+            <button className='agregarcarrito' onClick={() => funcionAgregar(contador)}>Agregar al Carrito</button>
         </>
     )
 }
