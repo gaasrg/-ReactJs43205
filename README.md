@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# Apple Connection
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Apple Connection es una plataforma de comercio electrónico especializada en la venta de productos Apple. Esta aplicación utiliza Firebase para los servicios de backend y React Router DOM para la navegación. Los usuarios pueden explorar diferentes categorías de productos, agregar artículos a su carrito de compras y completar pedidos.
 
-## Available Scripts
+## Tabla de Contenidos
+Características
+Requisitos
+Instalación
+Uso
+Configuración de Firebase
+Licencia
 
-In the project directory, you can run:
+## Características
+Navegación y filtrado de productos por categoría
+Agregar productos al carrito de compras
+Ajustar cantidades y eliminar artículos del carrito
+Realizar pedidos y completar la compra
+Autenticación y gestión de usuarios
+Integración con los servicios de backend de Firebase
 
-### `npm start`
+## Requisitos
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Asegúrate de tener instalados los siguientes elementos:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Node.js (versión 16.0.0 o superior).
+NPM (versión 7.0.0 o superior).
+Firebase account y proyecto configurado.
+React Router DOM (versión 6.0.0-beta.0 o superior).
 
-### `npm test`
+## Instalación
+1. Clona el repositorio:
+git clone https://github.com/gaasrg/-ReactJs43205.git
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Navega hasta el directorio del proyecto:
+cd (nombre carpeta proyecto)
 
-### `npm run build`
+3. Instala las dependencias:
+npm install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Uso
+1. Inicia el servidor de desarrollo:
+npm start
+2. Abre tu navegador web y visita http://localhost:3000 para acceder a la plataforma de comercio electrónico Apple Connection.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Configuración de Firebase
+Para configurar los servicios de backend de Firebase, sigue estos pasos:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Crea una cuenta de Firebase en https://firebase.google.com si aún no tienes una.
+Configura un nuevo proyecto de Firebase.
+Obtén las credenciales de tu proyecto de Firebase (clave de API, dominio de autenticación, ID del proyecto, etc.).
+Actualiza la configuración de Firebase en el proyecto:
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+const firebaseConfig = {
+  apiKey: "TU_CLAVE_API",
+  authDomain: "TU_DOMINIO_DE_AUTENTICACIÓN",
+  projectId: "TU_ID_DE_PROYECTO",
+  // ...otras propiedades de configuración de Firebase
+};
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+firebase.initializeApp(firebaseConfig);
+Personaliza los servicios de Firebase en el proyecto según tus requisitos (por ejemplo, base de datos Firestore, autenticación, etc.).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Licencia
+Este proyecto se encuentra bajo la Licencia MIT.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
