@@ -3,7 +3,7 @@ import {getFirestore} from "firebase/firestore";
 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAvjhjFjqrwUOe5-263_IwO7nqFF1JePqs",
+    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
     authDomain: "ecommerce-apple.firebaseapp.com",
     projectId: "ecommerce-apple",
     storageBucket: "ecommerce-apple.appspot.com",

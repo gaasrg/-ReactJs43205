@@ -6,7 +6,7 @@ header {
     border-bottom: 1px solid rgb(250, 250, 250);
     margin-bottom: 2rem;
     margin-top: 1rem;
-    
+
 }
 
 li {
@@ -14,4 +14,23 @@ li {
     display: inline-block;
     margin: 1rem;
     cursor: pointer;
+
+}
+
+@media screen and (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .nav {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    .nav-list li {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
 }
